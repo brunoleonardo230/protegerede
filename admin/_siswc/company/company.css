@@ -1,0 +1,130 @@
+/*
+PAINEL DA GALERIA
+*/
+.panel_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.panel_gallery_image {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.panel_gallery_image_legend {
+    margin: 5px auto;
+}
+
+.panel_gallery_image img {
+    width: 100%;
+}
+
+.panel_gallery_action {
+    opacity: 0;
+    width: 100%;
+    height: calc(100% - 29px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.panel_gallery_action:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, .7);
+    transition: all .15s linear;
+}
+
+.panel_gallery_action .buttons {
+    outline: 2px solid #000081;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel_gallery_action .buttons li {
+    margin-right: 3px;
+}
+
+/*Modal para editar legenda */
+.modal_legend {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none; /* jQuery muda para display:flex */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 98;
+    box-shadow: 0 0 3px 0 #000;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal_legend_content {
+    margin: 5% auto;
+    max-width: 100%;
+    overflow: auto;
+    background: #fff;
+    width: 500px;
+    padding: 20px;
+}
+
+.modal_legend_content input {
+    margin: 10px auto;
+}
+
+/** BREAKPOINTS **/
+@media screen and (min-width: 320px) {
+    .panel_gallery_image {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .panel_gallery_image {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .panel_gallery_image {
+        width: calc(100% / 3 - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+    .panel_gallery_image {
+        width: calc(25% - 10px);
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .panel_gallery_image {
+        width: calc(20% - 10px);
+        margin: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box_teeth_content {
+        flex-basis: calc(100% - 10px);
+        margin: 5px 15px 40px 15px;
+        justify-content: center;
+    }
+}

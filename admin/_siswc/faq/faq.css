@@ -1,0 +1,9 @@
+/* FAQ */
+.refs#cadastro{display: none;}
+.refs#cadastro .close{cursor: pointer}
+.refs#cadastro .close:hover{color: red}
+.refs#cadastro .thumb_controll{width: 60%; margin: 0 auto;}
+
+.refs#base article header{position: relative; background: #f7f7f7; -webkit-box-shadow: 2px 0 4px 0px rgba(204,204,204,1); -moz-box-shadow: 2px 0 4px 0px rgba(204,204,204,1); box-shadow: 2px 0 4px 0px rgba(204,204,204,1);}
+.refs#base article .info{position: relative; width: 100%; padding: 10px 20px 10px 20px; background: #f7f7f7; color: #333; font-size: 0.85em; line-height: 1.5em;}
+.refs#base article footer{background: rgb(242,242,242); background: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(255,255,255,1) 100%); padding: 15px 10px; border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px ; -webkit-border-radius: 0 0 6px 6px; -webkit-box-shadow: 2px 3px 4px 0px rgba(204,204,204,1); -moz-box-shadow: 2px 3px 4px 0px rgba(204,204,204,1); box-shadow: 2px 3px 4px 0px rgba(204,204,204,1);}

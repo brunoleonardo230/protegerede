@@ -1,0 +1,84 @@
+.wc_hellobar{
+
+}
+
+.wc_hellobar_box{
+    position: relative;
+    box-shadow: 0 0 8px #000;
+}
+
+.wc_hellobar_close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 8px;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 0.8em;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    cursor: pointer;
+}
+
+.wc_hellobar_close:hover{
+    background: #000;
+}
+
+.wc_hellobar_box_content{
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.wc_hellobar_box_content_btn{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+.wc_hellobar_center{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 98;
+    display: none;
+}
+
+.wc_hellobar_center .wc_hellobar_box{
+    display: block;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    top: -100px;
+    opacity: 0.5;
+}
+
+.wc_hellobar_right_top,
+.wc_hellobar_right_bottom{
+    position: fixed;
+    right: -360px;
+    bottom: 20px;
+    z-index: 99;
+    width: 360px;
+    max-width: calc(100% - 40px);
+    opacity: 0;
+}
+
+.wc_hellobar_right_top .wc_hellobar_box,
+.wc_hellobar_right_bottom .wc_hellobar_box{
+    background: #fff;
+}
+
+.wc_hellobar_right_top{
+    bottom: auto;
+    top: 20px;
+}

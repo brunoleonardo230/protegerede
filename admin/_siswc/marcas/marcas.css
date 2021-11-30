@@ -1,0 +1,8 @@
+.refs#cadastro{display: none;}
+.refs#cadastro .close{cursor: pointer}
+.refs#cadastro .close:hover{color: red}
+.refs#cadastro .thumb_controll{width: 100%; margin: 0 auto;}
+
+.refs#base article header{position: relative;}
+.refs#base article .info{position: relative; width: 100%; padding: 10px 20px 10px 20px; background: rgba(255,255,255,.85); color: #333; font-size: 0.85em; line-height: 1.5em;}
+.refs#base article footer{background: #fbfbfb; padding: 10px; border-top: #fff solid 1px;}

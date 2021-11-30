@@ -1,0 +1,11 @@
+<!-- 
+
+1) Colocar essa chamada abaixo onde desejar instalar o tradutor, geralmente é colocado em themes/nome_do_tema/inc/header.php 
+
+2) O CSS se encontra na pasta _cdn/widgets/translate e é necessário ajustar conforme o tema escolhido.
+
+-->
+
+
+
+<?php require '_cdn/widgets/translate/translate.wc.php'; ?>
