@@ -5,7 +5,7 @@
 			<!-- Top Header -->
 			<div class="default-top row">
 				<div class="logo-block">
-					<a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-heartbeat"></i>Doctor</a>
+					<a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Protege</a>
 				</div>
 				<a href="tel:<?= SITE_ADDR_PHONE_A; ?>" title="<?= SITE_ADDR_PHONE_A; ?>" class="phone-call"><i class="fa fa-phone-square"></i><?= SITE_ADDR_PHONE_A; ?></a>
 			</div> <!-- Top Header /-->
@@ -21,7 +21,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-heartbeat"></i>Doctor</a>
+					<a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
 				</div>
 				<div class="navbar-collapse collapse" id="navbar">
 					<ul class="nav navbar-nav menubar">
@@ -34,16 +34,16 @@
                         <li class="<?= ($URL[0] == 'servicos' ? 'active' : ''); ?>">
                             <a itemprop="url" href="<?= BASE; ?>/servicos" title="Serviços"><span itemprop="name">Serviços</span></a>
                         </li>
-                        <li class="<?= ($URL[0] == 'especialidades' ? 'active' : ''); ?>">
-                            <a itemprop="url" href="<?= BASE; ?>/especialidades" title="Especialidades"><span itemprop="name">Especialidades</span></a>
+                        <li class="<?= ($URL[0] == 'parceiros' ? 'active' : ''); ?>">
+                            <a itemprop="url" href="<?= BASE; ?>/parceiros" title="Parceiros"><span itemprop="name">Parceiros</span></a>
                         </li>
-                        <li class="<?= ($URL[0] == 'medicos' ? 'active' : ''); ?>">
+                        <!-- <li class="<?= ($URL[0] == 'medicos' ? 'active' : ''); ?>">
                             <a itemprop="url" href="<?= BASE; ?>/medicos" title="Médicos"><span itemprop="name">Médicos</span></a>
-                        </li>
+                        </li> -->
                         <li class="<?= ($URL[0] == 'galeria' ? 'active' : ''); ?>">
                             <a itemprop="url" href="<?= BASE; ?>/galeria" title="Galeria"><span itemprop="name">Galeria</span></a>
                         </li>
-                        <li class="dropdown mega-dropdown">
+                        <!-- <li class="dropdown mega-dropdown">
                             <a href="<?= BASE; ?>/artigos" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                             <i class="ddl-switch fa fa-angle-down"></i>
                             <ul class="dropdown-menu mega-menu">
@@ -58,7 +58,7 @@
                                 endif;
                                 ?>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="<?= ($URL[0] == 'contato' ? 'active' : ''); ?>">
                             <a itemprop="url" href="<?= BASE; ?>/contato" title="Contato"><span itemprop="name">Contato</span></a>
                         </li>
@@ -109,7 +109,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><i class="fa fa-heartbeat"></i>Doctor</a>
+                    <a class="navbar-brand" href="index.html"><i class="fa fa-building-o"></i>Doctor</a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav menubar navbar-right">
@@ -167,7 +167,7 @@
         <div class="logo-block">
             <!-- Container -->
             <div class="container">
-                <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-heartbeat"></i>Doctor</a>
+                <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
             </div> <!-- Container /-->
         </div> <!-- Logo Block /- -->
 
@@ -182,7 +182,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand desktop-hide" href="index.html"><i class="fa fa-heartbeat"></i>Doctor</a>
+                    <a class="navbar-brand desktop-hide" href="index.html"><i class="fa fa-building-o"></i>Doctor</a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav menubar">
@@ -270,7 +270,7 @@
             <!-- Top Header -->
             <div class="default-top row">
                 <div class="logo-block">
-                    <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-heartbeat"></i>Doctor</a>
+                    <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
                 </div>
                 <a href="tel:<?= SITE_ADDR_PHONE_A; ?>" title="<?= SITE_ADDR_PHONE_A; ?>" class="phone-call"><i class="fa fa-phone-square"></i><?= SITE_ADDR_PHONE_A; ?></a>
             </div> <!-- Top Header /-->
@@ -286,7 +286,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-heartbeat"></i>Doctor</a>
+                    <a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav menubar">

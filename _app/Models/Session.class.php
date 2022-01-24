@@ -54,14 +54,14 @@ class Session {
         endif;
 
         // Pega a localização Cidade/Estado/Pais pelo IP
-        $cURL = curl_init("http://ip-api.com/json/{$this->Session['online_ip']}");
-        curl_setopt($cURL, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($cURL, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($cURL, CURLOPT_CONNECTTIMEOUT, 10);
-        curl_setopt($cURL, CURLOPT_MAXREDIRS, 3);
-        $data = json_decode(curl_exec($cURL), true);
-        $returnCode = curl_getinfo($cURL, CURLINFO_HTTP_CODE);
-        curl_close($cURL);
+        //$cURL = curl_init("http://ip-api.com/json/{$this->Session['online_ip']}");
+        // curl_setopt($cURL, CURLOPT_SSL_VERIFYPEER, false);
+        // curl_setopt($cURL, CURLOPT_RETURNTRANSFER, true);
+        // curl_setopt($cURL, CURLOPT_CONNECTTIMEOUT, 10);
+        // curl_setopt($cURL, CURLOPT_MAXREDIRS, 3);
+        // $data = json_decode(curl_exec($cURL), true);
+        // $returnCode = curl_getinfo($cURL, CURLINFO_HTTP_CODE);
+        // curl_close($cURL);
 
         /*
          * Para debugar o retorno da API remova o comentário das 3 linhas abaixo e acesse qualquer página do seu site. 
@@ -70,11 +70,11 @@ class Session {
 //        var_dump($data);
 //        die;
 
-        if ($returnCode == 200 && !$_SERVER['HTTP_HOST'] == 'localhost'):
-            $this->Session['online_city'] = str_replace(array("'", '"'), "", $data['city']);
-            $this->Session['online_state'] = str_replace(array("'", '"'), "", $data['regionName']);
-            $this->Session['online_country'] = str_replace(array("'", '"'), "", $data['country']);
-        endif;
+        // if ($returnCode == 200 && !$_SERVER['HTTP_HOST'] == 'localhost'):
+        //     $this->Session['online_city'] = str_replace(array("'", '"'), "", $data['city']);
+        //     $this->Session['online_state'] = str_replace(array("'", '"'), "", $data['regionName']);
+        //     $this->Session['online_country'] = str_replace(array("'", '"'), "", $data['country']);
+        // endif;
 
         // Identifica o dispositivo do visitante
         $this->getDevice();

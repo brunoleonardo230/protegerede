@@ -34,10 +34,10 @@
                                  data-paddingtop="[55,55,55,55]"
                                  data-paddingright="[45,45,45,65]"
                                  data-paddingbottom="[55,55,55,55]"
-                                 data-paddingleft="[45,45,45,25]"
+                                 data-paddingleft="[20,20,20,10]"
                                  style="z-index:3; position:relative; text-transform:uppercase; width: 561px; color:#4c4c4c; height: 221px; font-family: 'Lato', sans-serif; font-weight: 300;">
-                                <span class="title-txt" style="font-size: 48px; font-weight:bold;">Serviços</span>
-                                Médicos <br> Para Sua <span style="font-weight:bold; font-size: 48px;">Saúde</span>
+                                <span class="title-txt" style="font-size: 48px; font-weight:bold;">Venda</span>
+                                e <span class="title-txt" style="font-size: 48px; font-weight:bold;">Instalação</span><br> de <span style="font-weight:bold; font-size: 48px;">Rede de Proteção</span>
                             </div>
 
                             <div class="tp-caption NotGeneric-Button rev-btn learn-btn rs-parallaxlevel-0"
@@ -62,12 +62,12 @@
                                  data-paddingleft="[10,10,10,10]"
                                  style="z-index: 10; border-radius: 0; letter-spacing:0.8px; color: #fff; font-family: 'Poppins', sans-serif; text-transform:capitalize; white-space:nowrap; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;">
                                  <span class="button-txt">
-                                    <i class="fa fa-stethoscope" style="text-align: center; line-height: 50px; width: 55px; height: 55px; font-size: 24px; border-radius: 50%; background-color: #fff; vertical-align: middle; box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.06); margin-right: 10px;"></i>
+                                    <i class="fa fa-building-o" style="text-align: center; line-height: 50px; width: 55px; height: 55px; font-size: 24px; border-radius: 50%; background-color: #fff; vertical-align: middle; box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.06); margin-right: 10px;"></i>
                                     <a href="<?= BASE; ?>/sobre" title="Saber Mais"> Saber Mais</a>
                                  </span>
                             </div>
                         </li>
-                        <li data-transition="zoomout" data-slotamount="default" data-easein="easeInOut"
+                        <!-- <li data-transition="zoomout" data-slotamount="default" data-easein="easeInOut"
                             data-easeout="easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade"
                             data-fsmasterspeed="1500" data-fsslotamount="7">
                             <img src="<?= INCLUDE_PATH; ?>/assets/images/slide3.jpg" alt="slider" data-bgposition="center center"
@@ -188,7 +188,7 @@
                                     <a href="<?= BASE; ?>/sobre" title="Saber Mais"> Saber Mais</a>
                                  </span>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div><!-- END OF SLIDER WRAPPER -->
@@ -232,7 +232,7 @@
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12 clinic-form">
                         <form class="appoinment-form schedule-form" name="schedule_form" method="post" enctype="multipart/form-data">
-                            <h5><i class="fa fa-calendar-check-o"></i>Agendar Consulta</h5>
+                            <h5><i class="fa fa-calendar-check-o"></i>Faça seu orçamento</h5>
                             <div class="form-group col-md-12 no-padding">
                                 <input type="text" class="form-control" placeholder="Nome" id="patient_name"
                                        name="consultation_name">
