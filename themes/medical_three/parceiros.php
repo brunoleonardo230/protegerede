@@ -27,23 +27,32 @@
             </div> <!-- Container /- -->
         </div> <!-- Page Banner -->
 
-        <!-- Department Section -->
-        <div class="department-section container-fluid no-left-padding no-right-padding">
+        <!-- Other Services -->
+        <div class="other-services container-fluid no-left-padding no-right-padding">
             <!-- Container -->
             <div class="container">
-                <div class="row">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h3>Outros Serviços</h3>
+                </div><!-- Section Header /- -->
+                <div class="row srv-box">
                     <?php
-                    $Read->ExeRead(DB_SPECIALTIES, "WHERE specialtie_status = 1 AND specialtie_datecreate <= NOW() ORDER BY specialtie_datecreate ASC, specialtie_title ASC LIMIT :limit", "limit=12");
+                    $Read->ExeRead(DB_SERVICES, "WHERE service_type = 3 AND service_status = 1 ORDER BY service_datecreate ASC LIMIT :limit", "limit=6");
                     if (!$Read->getResult()):
-                        echo Erro("Ainda Não Existem Parceiros Cadastradas! :)", E_USER_NOTICE);
+                        echo Erro("Ainda Não Existem Serviços Cadastrados! :)", E_USER_NOTICE);
                     else:
-                        foreach ($Read->getResult() as $Specialtie):
-                            extract($Specialtie);
+                        foreach ($Read->getResult() as $Service):
+                            extract($Service);
                             ?>
-                            <div class="col-md-2 col-sm-6 col-xs-6 department-box">
-                                <div class="department-img-block">
-                                    <img src="<?= BASE; ?>/uploads/<?= $specialtie_image; ?>" title="<?= $specialtie_title; ?>" alt="<?= $specialtie_title; ?>">
-                                    <span><?= $specialtie_title; ?></span>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                                <div class="other-services-block">
+                                    <div class="services-block-icon">
+                                        <i class="fa fa-<?= $service_icon_text; ?>"></i>
+                                    </div>
+                                    <div class="other-services-content">
+                                        <h5><?= $service_title; ?></h5>
+                                        <p><?= Check::Words($service_content,15); ?></p>
+                                    </div>
                                 </div>
                             </div>
                             <?php
@@ -52,7 +61,7 @@
                     ?>
                 </div>
             </div> <!-- Container /- -->
-        </div> <!-- Department Section -->
+        </div> <!-- Other Services -->
     </main>
 </div>
 

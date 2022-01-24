@@ -54,17 +54,17 @@
             </div> <!-- Container /- -->
         </div> <!-- Department Section -->
 
-        <!-- Offer Section -->
-        <div class="offer-section container-fluid no-left-padding no-right-padding">
+        <!-- Extra Services -->
+        <div class="extra-services container-fluid no-left-padding no-right-padding">
             <!-- Container -->
             <div class="container">
                 <!-- Section Header -->
                 <div class="section-header">
-                    <h3>O Que Oferecemos</h3>
-                </div> <!-- Section Header /- -->
+                    <h3>Materiais</h3>
+                </div><!-- Section Header /- -->
                 <div class="row">
                     <?php
-                    $Read->ExeRead(DB_SERVICES, "WHERE service_type = 2 AND service_status = 1 ORDER BY service_datecreate ASC LIMIT :limit", "limit=3");
+                    $Read->ExeRead(DB_SERVICES, "WHERE service_type = 4 AND service_status = 1 ORDER BY service_datecreate ASC LIMIT :limit", "limit=6");
                     if (!$Read->getResult()):
                         echo Erro("Ainda Não Existem Serviços Cadastrados! :)", E_USER_NOTICE);
                     else:
@@ -72,7 +72,7 @@
                             extract($Service);
                             ?>
                             <div class="col-md-4 col-sm-6 col-xs-6">
-                                <div class="offer-box">
+                                <div class="extra-box">
                                     <i class="fa fa-<?= $service_icon_text; ?>"></i>
                                     <h5><?= $service_title; ?></h5>
                                     <p><?= Check::Words($service_content,15); ?></p>
@@ -83,8 +83,8 @@
                     endif;
                     ?>
                 </div>
-            </div> <!-- Container -->
-        </div> <!-- Offer Section /- -->
+            </div> <!-- Container /- -->
+        </div> <!-- Extra Services /- -->
 
         <!-- Other Services -->
         <div class="other-services container-fluid no-left-padding no-right-padding">
@@ -121,90 +121,6 @@
                 </div>
             </div> <!-- Container /- -->
         </div> <!-- Other Services -->
-
-        <!-- Extra Services -->
-        <div class="extra-services container-fluid no-left-padding no-right-padding">
-            <!-- Container -->
-            <div class="container">
-                <!-- Section Header -->
-                <div class="section-header">
-                    <h3>Serviços Extras</h3>
-                </div><!-- Section Header /- -->
-                <div class="row">
-                    <?php
-                    $Read->ExeRead(DB_SERVICES, "WHERE service_type = 4 AND service_status = 1 ORDER BY service_datecreate ASC LIMIT :limit", "limit=6");
-                    if (!$Read->getResult()):
-                        echo Erro("Ainda Não Existem Serviços Cadastrados! :)", E_USER_NOTICE);
-                    else:
-                        foreach ($Read->getResult() as $Service):
-                            extract($Service);
-                            ?>
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                                <div class="extra-box">
-                                    <i class="fa fa-<?= $service_icon_text; ?>"></i>
-                                    <h5><?= $service_title; ?></h5>
-                                    <p><?= Check::Words($service_content,15); ?></p>
-                                </div>
-                            </div>
-                            <?php
-                        endforeach;
-                    endif;
-                    ?>
-                </div>
-            </div> <!-- Container /- -->
-        </div> <!-- Extra Services /- -->
-
-        <!-- Tab Section -->
-        <div class="tab-section container-fluid no-left-padding no-right-padding">
-            <!-- Container -->
-            <div class="container">
-                <div class="tab-detail">
-                    <!-- Nav Tabs -->
-                    <ul class="nav nav-tabs services-tabs" role="tablist">
-                        <?php
-                        $Read->ExeRead(DB_SPECIALTIES, "WHERE specialtie_status = 1 AND specialtie_datecreate <= NOW() ORDER BY specialtie_datecreate ASC LIMIT :limit", "limit=5");
-                        if (!$Read->getResult()):
-                            echo Erro("Ainda Não Existem Especialidades Cadastradas! :)", E_USER_NOTICE);
-                        else:
-                            $i = 1;
-                            foreach ($Read->getResult() as $Specialties):
-                                extract($Specialties);
-                                ?>
-                                <li role="presentation" class="<?= ($i == 1 ? 'active' : ''); ?>">
-                                    <a href="#tab-<?= $i; ?>" role="tab" data-toggle="tab"><?= $specialtie_title; ?></a>
-                                </li>
-                                <?php
-                                $i++;
-                            endforeach;
-                        endif;
-                        ?>
-                    </ul>
-                    <!-- Tab Panes -->
-                    <div class="tab-content">
-                        <?php
-                        $Read->ExeRead(DB_SPECIALTIES, "WHERE specialtie_status = 1 AND specialtie_datecreate <= NOW() ORDER BY specialtie_datecreate ASC LIMIT :limit", "limit=5");
-                        if (!$Read->getResult()):
-                            echo Erro("Ainda Não Existem Especialidades Cadastradas! :)", E_USER_NOTICE);
-                        else:
-                            $i = 1;
-                            foreach ($Read->getResult() as $Specialties):
-                                extract($Specialties);
-                                ?>
-                                <div role="tabpanel" class="tab-pane <?= ($i == 1 ? 'active' : ''); ?>" id="tab-<?= $i; ?>">
-                                    <i><img src="<?= BASE; ?>/uploads/<?= $specialtie_image; ?>"
-                                            title="<?= $specialtie_title; ?>" alt="<?= $specialtie_title; ?>"/></i>
-                                    <h5><?= $specialtie_title; ?></h5>
-                                    <p><?= Check::Words($specialtie_content,50); ?></p>
-                                </div>
-                                <?php
-                                $i++;
-                            endforeach;
-                        endif;
-                        ?>
-                    </div> <!-- Tab Panes /- -->
-                </div>
-            </div> <!-- Container /- -->
-        </div> <!-- Tab Section -->
     </main>
 </div>
 	
