@@ -35,12 +35,12 @@
                     <span><i class="fa fa-clock-o"></i></span>
                     <h3 class="widget-title">Funcionamento</h3>
                     <ul>
-                        <li><span>Segunda-Feira</span> <b>7:00 - 21:00</b></li>
-                        <li><span>Terça-Feira</span> <b>7:00 - 21:00</b></li>
-                        <li><span>Quarta-Feira</span> <b>7:00 - 21:00</b></li>
-                        <li><span>Quinta-Feira</span> <b>7:00 - 21:00</b></li>
-                        <li><span>Sexta-Feira</span> <b>7:00 - 21:00</b></li>
-                        <li><span>Sábado</span> <b>8:00 - 19:00</b></li>
+                        <li><span>Segunda-Feira</span> <b>8:00 - 18:00</b></li>
+                        <li><span>Terça-Feira</span> <b>8:00 - 18:00</b></li>
+                        <li><span>Quarta-Feira</span> <b>8:00 - 18:00</b></li>
+                        <li><span>Quinta-Feira</span> <b>8:00 - 18:00</b></li>
+                        <li><span>Sexta-Feira</span> <b>8:00 - 18:00</b></li>
+                        <li><span>Sábado</span> <b>8:00 - 12:00</b></li>
                         <li><span>Domingo</span> <b>Fechado</b></li>
                     </ul>
                 </aside>
@@ -50,16 +50,16 @@
                 <form name="contact_form" class="contato-form" method="post" action="" enctype="multipart/form-data">
                     <input type="hidden" name="phone">
                     <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Nome" required />
+                        <input type="text" name="consultation_name" class="form-control" placeholder="Nome" required />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="email" class="form-control" placeholder="E-mail" required />
+                        <input type="text" name="consultation_email" class="form-control" placeholder="E-mail" required />
                     </div>
                     <div class="form-group">
                         <input type="text" name="subject" class="form-control" placeholder="Assunto" />
                     </div>
                     <div class="form-group">
-                        <textarea name="message" class="form-control" placeholder="Mensagem" rows="4"></textarea>
+                        <textarea name="consultation_message" class="form-control" placeholder="Mensagem" rows="4"></textarea>
                     </div>
                     <div class="form-group">
                         <button type="submit" title="Enviar Mensagem" >Enviar</button>
@@ -81,6 +81,6 @@
     <!-- Container -->
     <div class="container">
         <p>Copyright ® <?= date('Y'); ?> - Todos os Direitos Reservados - <a class="copyright" title="<?= SITE_NAME; ?>" href="<?= BASE; ?>"><?= SITE_NAME; ?></a></p>
-        <p>Desenvolvido Com <span class="fa fa-heart heart"></span> Por <a class="copyright" title="GbTechWeb" target="_blank" href="https://www.gbtechweb.com.br">GbTechWeb</a></p>
+        <p>Desenvolvido Com <span class="fa fa-heart heart"></span> Por <a class="copyright" title="Heaven Web" target="_blank" href="https://www.heavenweb.com.br">Heaven Web</a></p>
     </div><!-- Container /- -->
 </div>

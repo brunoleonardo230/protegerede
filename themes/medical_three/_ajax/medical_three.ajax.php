@@ -27,9 +27,9 @@ $Trigger = new Trigger;
 switch ($Action):
     //FORMULÁRIO DE CONTATO
     case 'contact_form':
-        if (empty($POST['name']) || empty($POST['email'])):
+        if (empty($POST['consultation_name']) || empty($POST['consultation_email'])):
             $jSON['wc_contact_error'] = "<p class='wc_contact_error'>&#10008; Por Favor, Preencha o Nome e E-mail Para Enviar a Mensagem!</p>";
-        elseif (!Check::Email($POST['email']) || !filter_var($POST['email'], FILTER_VALIDATE_EMAIL)):
+        elseif (!Check::Email($POST['consultation_email']) || !filter_var($POST['consultation_email'], FILTER_VALIDATE_EMAIL)):
             $jSON['wc_contact_error'] = "<p class='wc_contact_error'>&#10008; O E-mail Informado Não Parece Válido. Por Favor, Informe o Seu E-mail!</p>";
         else:
             $MailContent = '
@@ -83,9 +83,9 @@ switch ($Action):
             $CreateConsultation = [
                 "consultation_name" => $POST['consultation_name'],
                 "consultation_email" => $POST['consultation_email'],
-                "consultation_telephone" => $POST['consultation_telephone'],
-                "date" => date('Y-m-d', strtotime($POST['date'])),
-                "time" => date('H:i', strtotime($POST['time'])),
+                //"consultation_telephone" => $POST['consultation_telephone'],
+                "date" => date('Y-m-d', strtotime(date('d/m/Y'))),
+                //"time" => date('H:i', strtotime(date('h:i', time()))),
                 "consultation_message" => $POST['consultation_message'],
                 "consultation_status" => 1
             ];

@@ -37,7 +37,7 @@
                                  data-paddingleft="[20,20,20,10]"
                                  style="z-index:3; position:relative; text-transform:uppercase; width: 561px; color:#4c4c4c; height: 221px; font-family: 'Lato', sans-serif; font-weight: 300;">
                                 <span class="title-txt" style="font-size: 48px; font-weight:bold;">Venda</span>
-                                e <span class="title-txt" style="font-size: 48px; font-weight:bold;">Instalação</span><br> de <span style="font-weight:bold; font-size: 48px;">Rede de Proteção</span>
+                                e <span class="title-txt" style="font-size: 48px; font-weight:bold;">Instalação</span><br> de <span style="font-weight:bold; font-size: 48px;">Redes de Proteção</span>
                             </div>
 
                             <div class="tp-caption NotGeneric-Button rev-btn learn-btn rs-parallaxlevel-0"
