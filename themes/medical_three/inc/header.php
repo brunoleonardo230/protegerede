@@ -43,7 +43,7 @@
                         <li class="<?= ($URL[0] == 'galeria' ? 'active' : ''); ?>">
                             <a itemprop="url" href="<?= BASE; ?>/galeria" title="Galeria"><span itemprop="name">Galeria</span></a>
                         </li>
-                        <!-- <li class="dropdown mega-dropdown">
+                        <li class="dropdown mega-dropdown">
                             <a href="<?= BASE; ?>/artigos" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                             <i class="ddl-switch fa fa-angle-down"></i>
                             <ul class="dropdown-menu mega-menu">
@@ -58,7 +58,7 @@
                                 endif;
                                 ?>
                             </ul>
-                        </li> -->
+                        </li>
                         <li class="<?= ($URL[0] == 'contato' ? 'active' : ''); ?>">
                             <a itemprop="url" href="<?= BASE; ?>/contato" title="Contato"><span itemprop="name">Contato</span></a>
                         </li>
