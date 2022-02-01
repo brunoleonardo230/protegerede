@@ -21,7 +21,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
+					<a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Protege</a>
 				</div>
 				<div class="navbar-collapse collapse" id="navbar">
 					<ul class="nav navbar-nav menubar">
@@ -109,7 +109,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><i class="fa fa-building-o"></i>Doctor</a>
+                    <a class="navbar-brand" href="index.html"><i class="fa fa-building-o"></i>Protege</a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav menubar navbar-right">
@@ -167,7 +167,7 @@
         <div class="logo-block">
             <!-- Container -->
             <div class="container">
-                <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
+                <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Protege</a>
             </div> <!-- Container /-->
         </div> <!-- Logo Block /- -->
 
@@ -182,7 +182,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand desktop-hide" href="index.html"><i class="fa fa-building-o"></i>Doctor</a>
+                    <a class="navbar-brand desktop-hide" href="index.html"><i class="fa fa-building-o"></i>Protege</a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav menubar">
@@ -270,7 +270,7 @@
             <!-- Top Header -->
             <div class="default-top row">
                 <div class="logo-block">
-                    <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
+                    <a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Protege</a>
                 </div>
                 <a href="tel:<?= SITE_ADDR_PHONE_A; ?>" title="<?= SITE_ADDR_PHONE_A; ?>" class="phone-call"><i class="fa fa-phone-square"></i><?= SITE_ADDR_PHONE_A; ?></a>
             </div> <!-- Top Header /-->
@@ -286,7 +286,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Doctor</a>
+                    <a class="navbar-brand desktop-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Protege</a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav menubar">
