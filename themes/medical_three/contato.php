@@ -33,8 +33,7 @@
             <div class="container">
                 <div class="contact-header">
                     <h5>Fale Conosco</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard .</p>
+                    <p></p>
                 </div>
                 <div class="contact-form">
                     <h5>Enviar Mensagem</h5>
