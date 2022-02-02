@@ -7,7 +7,7 @@
 				<div class="logo-block">
 					<a class="navbar-brand mobile-hide" href="<?= BASE; ?>" title="<?= SITE_NAME; ?>"><i class="fa fa-building-o"></i>Protege</a>
 				</div>
-				<a href="tel:<?= SITE_ADDR_PHONE_A; ?>" title="<?= SITE_ADDR_PHONE_A; ?>" class="phone-call"><i class="fa fa-phone-square"></i><?= SITE_ADDR_PHONE_A; ?></a>
+				<a href="https://wa.me/5598985303521?text=Protege+Redes+de+Prote%C3%A7%C3%A3o." title="<?= SITE_ADDR_PHONE_A; ?>" class="phone-call"><i class="fa fa-phone-square"></i><?= SITE_ADDR_PHONE_A; ?></a>
 			</div> <!-- Top Header /-->
 		</div><!-- Container /- -->
 		<!-- Ownavigation -->
